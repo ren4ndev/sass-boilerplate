@@ -1,0 +1,136 @@
+.ty {
+  &-display1 {
+    font-family: $primary;
+    font-size: $m-display1;
+    font-weight: $regular;
+    line-height: 120%;
+    
+    &--bold {
+      font-weight: $bold;
+    }
+    
+    @media screen and (min-width: $desktop) {
+      font-size: $d-display1;
+    }
+  }
+
+  &-display2 {
+    font-family: $primary;
+    font-size: $m-display2;
+    font-weight: $regular;
+    line-height: 120%;
+
+    &--bold {
+      font-weight: $bold;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: $d-display2;
+    }
+  }
+
+  &-heading1 {
+    font-family: $primary;
+    font-size: $m-heading1;
+    font-weight: $regular;
+    line-height: 120%;
+
+    &--bold {
+      font-weight: $bold;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: $d-heading1;
+    }
+  }
+
+  &-heading3 {
+    font-family: $primary;
+    font-size: $m-heading3;
+    font-weight: $regular;
+    line-height: 120%;
+
+    &--bold {
+      font-weight: $bold;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: $d-heading3;
+    }
+  }
+
+  &-heading4 {
+    font-family: $primary;
+    font-size: $m-heading4;
+    font-weight: $regular;
+    line-height: 120%;
+
+    &--bold {
+      font-weight: $bold;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: $d-heading4;
+    }
+  }
+
+  &-sub {
+    font-family: $primary;
+    font-size: $m-sub;
+    font-weight: $regular;
+    line-height: 150%;
+
+    &--bold {
+      font-weight: $bold;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: $d-sub;
+    }
+  }
+
+  &-body1 {
+    font-family: $primary;
+    font-size: $m-body1;
+    font-weight: $regular;
+    line-height: 150%;
+
+    &--bold {
+      font-weight: $bold;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: $d-body1;
+    }
+  }
+
+  &-body2 {
+    font-family: $primary;
+    font-size: $m-body2;
+    font-weight: $regular;
+    line-height: 150%;
+
+    &--bold {
+      font-weight: $bold;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: $d-body2;
+    }
+  }
+
+  &-cap {
+    font-family: $primary;
+    font-size: $m-cap;
+    font-weight: $regular;
+    line-height: 150%;
+
+    &--bold {
+      font-weight: $bold;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: $d-cap;
+    }
+  }
+}
