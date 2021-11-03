@@ -8,6 +8,10 @@
     grid-row: heading-start/heading-end;
   }
 
+  &__sub {
+    color: $primary;
+  }
+
   &__content {
     align-items: center;
     background-color: $white;
