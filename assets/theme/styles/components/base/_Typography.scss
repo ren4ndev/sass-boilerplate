@@ -44,6 +44,21 @@
     }
   }
 
+  &-heading2 {
+    font-family: $primary-font;
+    font-size: $m-heading2;
+    font-weight: $regular;
+    line-height: 120%;
+
+    &--bold {
+      font-weight: $bold;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: $d-heading2;
+    }
+  }
+
   &-heading3 {
     font-family: $primary-font;
     font-size: $m-heading3;
