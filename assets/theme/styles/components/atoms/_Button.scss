@@ -1,9 +1,22 @@
 .btn {
+  cursor: pointer;
+
   &--primary {
     background-color: $primary;
     border-radius: 0.25rem;
     color: $white;
     height: 48px;
     width: 200px;
+    @extend .btn;
+  }
+
+  &--download {
+    background-color: $primary;
+    border: none;
+    border-radius: 40px;
+    color: $white;
+    height: 56px;
+    width: 200px;
+    @extend .btn;
   }
 }

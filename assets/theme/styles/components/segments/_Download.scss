@@ -1,0 +1,39 @@
+.s-download {
+  background-color: $secondary;
+  grid-template-rows: 100px [main-start heading-start] auto [heading-end] 50px [content-start] 1fr [content-end main-end] 100px;
+  min-height: 100vh;
+
+  &__heading {
+    grid-column: main-start/main-end;
+    grid-row: heading-start/heading-end;
+  }
+
+  &__content {
+    align-items: center;
+    background-color: $white;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    grid-column: main-start/main-end;
+    grid-row: content-start/content-end;
+    height: 400px;
+    justify-content: center;
+    width: 400px;
+  }
+
+  &__card-img {
+    height: 100px;
+    margin: 15px;
+    width: 100px;
+  }
+
+  &__card-heading {
+    margin-bottom: 15px;
+    @extend .ty-heading2;
+  }
+
+  &__card-btn {
+    margin: 15px;
+    @extend .btn--download;
+  }
+}
