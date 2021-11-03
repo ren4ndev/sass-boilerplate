@@ -1,0 +1,31 @@
+.grid {
+  display: grid;
+  column-gap: 16px;
+  grid-template-columns: [full-start] 12px [main-start col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [main-end] 12px [full-end];
+  height: 100%;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    column-gap: 32px;
+    grid-template-columns: [full-start] 8px [main-start col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [main-end] 8px [full-end];
+  }
+
+  @media screen and (min-width: 1024px) {
+    column-gap: 16px;
+    grid-template-columns: [full-start] 2px [main-start col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [main-end] 2px [full-end];
+  }
+
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: [full-start] 92px [main-start col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [main-end] 92px [full-end];
+  }
+
+  @media screen and (min-width: 1440px) {
+    grid-template-columns: [full-start] 32px [main-start col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [main-end] 32px [full-end];
+  }
+
+  @media screen and (min-width: 1920px) {
+    grid-template-columns: [full-start] 136px [main-start col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [col-start] 1fr [main-end] 136px [full-end];
+    margin: 0 auto;
+    max-width: 1920px;
+  }
+}
