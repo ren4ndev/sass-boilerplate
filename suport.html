@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,40 @@
     <title>Suporte</title>
     <link rel="stylesheet" href="./dist/theme.css">
 </head>
-<body>
-    <section class="s-support">
-        <h1 class="s-support__heading ty-headind1">Suporte para usuários do Plugin Afilia Links</h1>
-        <h4 class="s-support__sub ty-headind4">Atendimento especial ao usuário do Plugin Afilia Links. Envie aqui suas dúvidas ou erros referentes ao plugin, que iremos te ajudar da melhor maneira possível!</h4>
-        <div class="s-support__form-wrapper">
-            <p class="s-support__form-caption ty-sub">Através do formulário abaixo você poderá acionar o nosso time para te ajudar em qualquer dificuldade de uso técnico. O atendimento é realizado através deste canal de segunda à sexta-feira, das 8h às 18h, horário de Brasília.</p>
-            <form class="s-support__form">
 
-            </form>
+<body>
+    <section class="s-support grid">
+        <div class="s-support__content">
+            <h1 class="s-support__heading ty-display2">Suporte para usuários do Plugin Afilia Links</h1>
+            <h4 class="s-support__sub ty-heading3">Atendimento especial ao usuário do Plugin Afilia Links. Envie aqui
+                suas dúvidas ou erros referentes ao plugin, que iremos te ajudar da melhor maneira possível!</h4>
+            <div class="s-support__form-wrapper">
+                <p class="s-support__form-caption ty-body1">Através do formulário abaixo você poderá acionar o nosso
+                    time
+                    para te ajudar em qualquer dificuldade de uso técnico. O atendimento é realizado através deste canal
+                    de segunda à sexta-feira, das 8h às 18h, horário de Brasília.</p>
+                <form class="s-support__form">
+                    <label class="s-support__label label" for="name">Nome:</label>
+                    <input class="s-support__input input input--text" type="text" id="name" name="user_name">
+
+                    <label class="s-support__label label" for="email">E-mail para retorno do contato:</label>
+                    <input class="s-support__input input input--text" type="text" id="email" name="user_email" placeholder="seuemail@email.com">
+
+                    <label class="s-support__label label" for="subject">Assunto:</label>
+                    <input class="s-support__input input input--text" type="text" id="subject" name="subject">
+
+                    <label class="s-support__label label" for="message">Mensagem para descrever o problema:</label>
+                    <textarea class="s-support__input textarea" type="text" id="message" name="message"></textarea>
+
+                    <label class="s-support__label label--file" for="file">Anexar arquivo<input class="s-support__input input input--file" type="file" id="file" name="file"></label>
+                    
+
+                    <label class="s-support__label label" for="url">O problema acontece em alguma página específica? Se sim, informe o endereço dela:</label>
+                    <input class="s-support__input input input--text" type="text" id="url" name="url">
+                </form>
+            </div>
         </div>
     </section>
 </body>
+
 </html>
