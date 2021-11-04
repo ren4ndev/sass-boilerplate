@@ -6,8 +6,8 @@
     border: none;
     border-radius: 0.25rem;
     color: $white;
-    height: 48px;
-    width: 200px;
+    height: 40px;
+    width: fit-content;
     @extend .btn;
   }
 
@@ -50,15 +50,23 @@
   &--cancel {
     background-color: $lightseagreen;
     height: 40px;
-    padding: 8px 12px;
-    width: fit-content;
+    padding: 8px 24px;
+    width: 100%;
     @extend .btn--primary;
+
+    @media screen and (min-width: $tablet-small) {
+      width: fit-content;
+    }
   }
   
   &--submit {
     height: 40px;
-    padding: 8px 12px;
-    width: fit-content;
+    padding: 8px 24px;
+    width: 100%;
     @extend .btn--primary;
+
+    @media screen and (min-width: $tablet-small) {
+      width: fit-content;
+    }
   }
 }

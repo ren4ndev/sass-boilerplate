@@ -23,7 +23,11 @@
   }
 
   &__form-caption {
-    margin: 25px 50px;
+    margin: 25px 0;
+
+    @media screen and (min-width: $tablet-small) {
+      margin: 25px 50px;
+    }
   }
 
   &__form {
@@ -32,5 +36,9 @@
     @media screen and (min-width: $tablet-small) {
       margin: 25px 50px;
     }
+  }
+
+  &__button {
+    background-color: $lightseagreen;
   }
 }
