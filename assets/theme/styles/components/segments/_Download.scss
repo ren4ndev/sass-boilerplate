@@ -6,6 +6,10 @@
   &__heading {
     grid-column: main-start/main-end;
     grid-row: heading-start/heading-end;
+
+    @media screen and (min-width: $desktop) {
+      grid-column: col-start 2/ span 8;
+    }
   }
 
   &__sub {
@@ -20,9 +24,23 @@
     flex-flow: column nowrap;
     grid-column: main-start/main-end;
     grid-row: content-start/content-end;
-    height: 400px;
+    height: 300px;
     justify-content: center;
-    width: 400px;
+    max-width: 100%;
+    width: 100%;
+
+    @media screen and (min-width: $mobile) {
+      width: 300px;
+    }
+
+    @media screen and (min-width: $tablet-small) {
+      height: 400px;
+      width: 400px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      grid-column: col-start 2/ span 8;
+    }
   }
 
   &__card-img {
