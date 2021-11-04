@@ -21,31 +21,78 @@
             <h6 class="s-licenses__topbar-title ty-body1">Lista de licenças</h6>
             <p class="s-licenses__topbar-caption ty-body2">Você pode criar: 1 licença</p>
           </div>
-          <button class="s-licenses__topbar-btn">Criar nova licença</button>
+          <button class="s-licenses__topbar-btn" id="btn-open-license">Criar nova licença</button>
         </div>
         <table class="s-licenses__table">
           <thead class="s-licenses__head">
-            <tr class="s-licenses__row">
-              <th class="s-licenses__theading">Nome</th>
-              <th class="s-licenses__theading">Licença</th>
-              <th class="s-licenses__theading">Domínio</th>
-              <th class="s-licenses__theading">Ações</th>
+            <tr class="s-licenses__row th-row">
+              <th class="s-licenses__theading th-heading">Nome</th>
+              <th class="s-licenses__theading th-heading">Licença</th>
+              <th class="s-licenses__theading th-heading">Domínio</th>
+              <th class="s-licenses__theading th-heading">Ações</th>
             </tr>
           </thead>
           <tbody class="s-licenses__body">
-            <tr class="s-licenses__row">
-              <td class="s-licenses__data">site</td>
-              <td class="s-licenses__data">313515131</td>
-              <td class="s-licenses__data">curso-completo-oficial.com</td>
-              <td class="s-licenses__data">
-                <button class="s-licenses__btn-manage">^^</button>
-                <button class="s-licenses__btn-delete">X</button>
+            <tr class="s-licenses__row td-row">
+              <td class="s-licenses__data td-data">site</td>
+              <td class="s-licenses__data td-data">313515131</td>
+              <td class="s-licenses__data td-data">curso-completo-oficial.com</td>
+              <td class="s-licenses__data td-data">
+                <button class="s-licenses__btn-manage btn--warning"><img class="btn--icon" src="./assets/theme/images/icons/tool.svg" alt="Ícone de ferramenta"></button>
+                <button class="s-licenses__btn-delete btn--danger"><img class="btn--icon" src="./assets/theme/images/icons/warning.svg" alt="Ícone de aviso"></button>
+              </td>
+            </tr>
+            <tr class="s-licenses__row td-row">
+              <td class="s-licenses__data td-data">site</td>
+              <td class="s-licenses__data td-data">313515131</td>
+              <td class="s-licenses__data td-data">curso-completo-oficial.com</td>
+              <td class="s-licenses__data td-data">
+                <button class="s-licenses__btn-manage btn--warning"><img class="btn--icon" src="./assets/theme/images/icons/tool.svg" alt="Ícone de ferramenta"></button>
+                <button class="s-licenses__btn-delete btn--danger"><img class="btn--icon" src="./assets/theme/images/icons/warning.svg" alt="Ícone de aviso"></button>
+              </td>
+            </tr>
+            <tr class="s-licenses__row td-row">
+              <td class="s-licenses__data td-data">site</td>
+              <td class="s-licenses__data td-data">313515131</td>
+              <td class="s-licenses__data td-data">curso-completo-oficial.com</td>
+              <td class="s-licenses__data td-data">
+                <button class="s-licenses__btn-manage btn--warning"><img class="btn--icon" src="./assets/theme/images/icons/tool.svg" alt="Ícone de ferramenta"></button>
+                <button class="s-licenses__btn-delete btn--danger"><img class="btn--icon" src="./assets/theme/images/icons/warning.svg" alt="Ícone de aviso"></button>
+              </td>
+            </tr>
+            <tr class="s-licenses__row td-row">
+              <td class="s-licenses__data td-data">site</td>
+              <td class="s-licenses__data td-data">313515131</td>
+              <td class="s-licenses__data td-data">curso-completo-oficial.com</td>
+              <td class="s-licenses__data td-data">
+                <button class="s-licenses__btn-manage btn--warning"><img class="btn--icon" src="./assets/theme/images/icons/tool.svg" alt="Ícone de ferramenta"></button>
+                <button class="s-licenses__btn-delete btn--danger"><img class="btn--icon" src="./assets/theme/images/icons/warning.svg" alt="Ícone de aviso"></button>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
     </section>
+    
+    <div class="c-new-license c-new-license--close">
+      <div class="c-new-license__head">
+        <h6 class="c-new-license__title ty-body1">Criar nova Licença</h6>
+        <img class="c-new-license__icon" src="./assets/theme/images/icons/close.svg" alt="Ícone de fechar" id="btn-close-license">
+      </div>
+      <div class="c-new-license__body">
+        <div class="c-new-license__text">
+          <p class="c-new-license__text-caption ty-body2">Deseja Realmente criar esta licença?<br />Ao clicar em cadastrar você estará gerando uma chave única que poderá ser utilizada em um único Dominio.</p>
+          <p class="c-new-license__text-warning ty-body2">* Evite colocar ponto ou barra no final da URL</p>
+        </div>
+      </div>
+      <form class="c-new-license__form">
+        <input class="c-new-license__input input input--text" type="text" id="license_name" name="license_name" placeholder="Nome da licença">
+        <input class="c-new-license__input input input--text" type="text" id="domain_name" name="domain_name" placeholder="Seu domínio">
+        <button class="c-new-license__input btn--cancel">Cancelar</button>
+        <button class="c-new-license__input btn--submit">Cadastrar</button>
+      </form>
+    </div>
+    <script src="./dist/theme.js"></script>
 </body>
 
 </html>

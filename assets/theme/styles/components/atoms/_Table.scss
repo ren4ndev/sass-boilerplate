@@ -1,0 +1,27 @@
+.td{
+  &-row {
+    height: 80px;
+
+    &:nth-child(odd) {
+      background-color: $grey;
+    }
+
+    &:nth-child(even) {
+      background-color: $secondary;
+    }
+  }
+
+  &-data {
+    // display: flex;
+    // flex-flow: row wrap;
+    height: 80px;
+    @extend .ty-body2;
+  }
+}
+
+.th {
+  &-row {
+    height: 80px;
+    @extend .ty-body2;
+  }
+}

@@ -20,4 +20,45 @@
     width: 200px;
     @extend .btn;
   }
+
+  &--warning {
+    background-color: $yellow;
+    border: none;
+    border-radius: 5px;
+    color: $black;
+    height: 30px;
+    width: 30px;
+    @extend .btn;
+  }
+
+  &--danger {
+    background-color: $red;
+    border: none;
+    border-radius: 5px;
+    color: $white;
+    height: 30px;
+    width: 30px;
+    @extend .btn;
+  }
+
+  &--icon {
+    height: 35%;
+    margin: auto;
+    width: 35%;
+  }
+
+  &--cancel {
+    background-color: $lightseagreen;
+    height: 40px;
+    padding: 8px 12px;
+    width: fit-content;
+    @extend .btn--primary;
+  }
+  
+  &--submit {
+    height: 40px;
+    padding: 8px 12px;
+    width: fit-content;
+    @extend .btn--primary;
+  }
 }
