@@ -11,9 +11,11 @@ function handleCloseModal() {
 
 function setEvents() {
   const btnOpen = document.getElementById('btn-open-license');
-  const btnClose = document.getElementById('btn-close-license');
+  const btnsClose = document.querySelectorAll('.btn-close-license');
   btnOpen.addEventListener('click', handleOpenModal);
-  btnClose.addEventListener('click', handleCloseModal);
+  btnsClose.forEach((btn) => {
+    btn.addEventListener('click', handleCloseModal);
+  });
 }
 
 window.onload = () => {
