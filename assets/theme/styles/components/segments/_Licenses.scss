@@ -6,6 +6,10 @@
   &__heading {
     grid-column: main-start/main-end;
     grid-row: heading-start/heading-end;
+
+    @media screen and (min-width: $desktop) {
+      grid-column: col-start 2 / span 10;
+    }
   }
 
   &__sub {
@@ -25,6 +29,10 @@
 
     @media screen and (min-width: $tablet-small) {
       grid-template-rows: [topbar-start] 100px [topbar-end table-start] 1fr [table-end];
+    }
+
+    @media screen and (min-width: $desktop) {
+      grid-column: col-start 2 / span 10;
     }
   }
 

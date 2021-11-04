@@ -5,6 +5,10 @@
   &__content {
     grid-column: main-start/main-end;
     grid-row: main-start/main-end;
+
+    @media screen and (min-width: $desktop) {
+      grid-column: col-start 2 / span 10;
+    }
   }
 
   &__heading {
