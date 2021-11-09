@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./dist/theme.css">
+</head>
+
+<body>
+    <header>
+        <div class="header grid">
+            <img class="header__logo" src="./assets/theme/images/logo-wide.png" alt="Logo Afilia Links">
+            <img class="header__icon" src="./assets/theme/images/icons/bars-solid.svg" alt="Ícone de menu" id="btn-modal">
+            <div class="header__menu-wrapper">
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link">Download</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link">Licenças</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link">Suporte</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header__modal header__modal--closed">
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link">Download</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link">Licenças</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link">Suporte</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="s-login grid">
+        <div class="s-login__content">
+            <h2 class="s-login__heading ty-display2">Acesse suas licenças</h2>
+            <div class="s-login__form-wrapper">
+                <form class="s-login__form">
+                    <label class="s-login__label label" for="code">Insira o código da sua transação da Hotmart</label>
+                    <input class="s-login__input input input--text" type="text" id="code" name="user_code">
+
+                    <button class="s-login__button ty-body1 btn--submit">Concetar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="./dist/theme.js"></script>
+</body>
+
+</html>

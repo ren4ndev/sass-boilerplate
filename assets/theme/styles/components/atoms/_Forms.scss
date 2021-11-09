@@ -1,4 +1,5 @@
 .label {
+  margin-bottom: 7px;
   width: 100%;
   
   &--file {
@@ -28,7 +29,7 @@
     padding: 20px;
     
     &:focus {
-      border: 1px solid $primary;
+      border: 1px solid $secondary;
       outline: none !important;
     }
   }
@@ -50,7 +51,7 @@
   width: 100%;
 
   &:focus {
-    border: 1px solid $primary;
+    border: 1px solid $secondary;
     outline: none !important;
   }
 }
