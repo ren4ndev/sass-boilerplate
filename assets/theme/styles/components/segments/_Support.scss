@@ -12,11 +12,12 @@
   }
 
   &__heading {
+    color: $white;
     margin-bottom: 25px;
   }
 
   &__sub {
-    color: $primary;
+    color: $white;
     margin-bottom: 25px;
   }
 
@@ -43,6 +44,6 @@
   }
 
   &__button {
-    background-color: $lightseagreen;
+    background-color: $secondary;
   }
 }

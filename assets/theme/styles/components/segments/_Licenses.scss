@@ -1,9 +1,10 @@
 .s-licenses {
-  background-color: $secondary;
+  background-color: $tertiary;
   grid-template-rows: 100px [main-start heading-start] auto [heading-end] 50px [content-start] 1fr [content-end main-end] 100px;
   min-height: 100vh;
 
   &__heading {
+    color: $primary;
     grid-column: main-start/main-end;
     grid-row: heading-start/heading-end;
 
