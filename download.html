@@ -10,35 +10,54 @@
 </head>
 
 <body>
-  <header class="header grid">
-    <img class="header__logo" src="./assets/theme/images/logo-wide.png" alt="Logo Afilia Links">
-    <div class="header__menu-wrapper">
-        <nav class="header__menu">
-            <ul class="header__menu-list">
-                <li class="header__menu-item">
-                    <a class="header__menu-link">Download</a>
-                </li>
-                <li class="header__menu-item">
-                    <a class="header__menu-link">Licenças</a>
-                </li>
-                <li class="header__menu-item">
-                    <a class="header__menu-link">Suporte</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <header>
+        <div class="header grid">
+            <img class="header__logo" src="./assets/theme/images/logo-wide.png" alt="Logo Afilia Links">
+            <img class="header__icon" src="./assets/theme/images/icons/bars-solid.svg" alt="Ícone de menu" id="btn-modal">
+            <div class="header__menu-wrapper">
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link">Download</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link">Licenças</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link">Suporte</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header__modal header__modal--closed">
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link">Download</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link">Licenças</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link">Suporte</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <section class="s-download grid">
-      <div class="s-download__heading">
-        <h2 class="s-download__title ty-display2">Baixar Plugin</h2>
-        <h4 class="s-download__sub ty-heading4">Faça o download do seu plugin abaixo</h4>
-      </div>
-      <div class="s-download__content">
-        <img class="s-download__card-img" src="./assets/theme/images/default.png" alt="Logo do Plugin">
-        <h2 class="s-download__card-heading">Plugin Afilia Links</h2>
-        <button class="s-download__card-btn btn--download">Baixar plugin</button>
-      </div>
+        <div class="s-download__heading">
+            <h2 class="s-download__title ty-display2">Baixar Plugin</h2>
+            <h4 class="s-download__sub ty-heading4">Faça o download do seu plugin abaixo</h4>
+        </div>
+        <div class="s-download__content">
+            <img class="s-download__card-img" src="./assets/theme/images/default.png" alt="Logo do Plugin">
+            <h2 class="s-download__card-heading">Plugin Afilia Links</h2>
+            <button class="s-download__card-btn btn--download">Baixar plugin</button>
+        </div>
     </section>
+    <script src="./dist/theme.js"></script>
 </body>
 
 </html>

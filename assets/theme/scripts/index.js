@@ -1,1 +1,2 @@
+import './headerModal';
 import './newLicenseModal';

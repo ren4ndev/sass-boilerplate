@@ -1,10 +1,10 @@
 .s-download {
-  background-color: $tertiary;
-  grid-template-rows: 100px [main-start heading-start] auto [heading-end] 50px [content-start] 1fr [content-end main-end] 100px;
+  background-color: $secondary;
+  grid-template-rows: 150px [main-start heading-start] auto [heading-end] 50px [content-start] 1fr [content-end main-end] 100px;
   min-height: 100vh;
 
   &__heading {
-    color: $primary;
+    color: $white;
     grid-column: main-start/main-end;
     grid-row: heading-start/heading-end;
 
@@ -14,7 +14,7 @@
   }
 
   &__sub {
-    color: $primary;
+    color: $white;
   }
 
   &__content {

@@ -1,6 +1,6 @@
 .s-support {
   background-color: $secondary;
-  grid-template-rows: 100px [main-start] 1fr [main-end] 100px;
+  grid-template-rows: 150px [main-start] 1fr [main-end] 100px;
 
   &__content {
     grid-column: main-start/main-end;

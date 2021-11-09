@@ -2,115 +2,145 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Licenças</title>
-    <link rel="stylesheet" href="./dist/theme.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Licenças</title>
+  <link rel="stylesheet" href="./dist/theme.css">
 </head>
 
 <body>
-    <header class="header grid">
+  <header>
+    <div class="header grid">
       <img class="header__logo" src="./assets/theme/images/logo-wide.png" alt="Logo Afilia Links">
+      <img class="header__icon" src="./assets/theme/images/icons/bars-solid.svg" alt="Ícone de menu" id="btn-modal">
       <div class="header__menu-wrapper">
-          <nav class="header__menu">
-              <ul class="header__menu-list">
-                  <li class="header__menu-item">
-                      <a class="header__menu-link">Download</a>
-                  </li>
-                  <li class="header__menu-item">
-                      <a class="header__menu-link">Licenças</a>
-                  </li>
-                  <li class="header__menu-item">
-                      <a class="header__menu-link">Suporte</a>
-                  </li>
-              </ul>
-          </nav>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link">Download</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link">Licenças</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link">Suporte</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </header>
-    <section class="s-licenses grid">
-      <div class="s-licenses__heading">
-        <h2 class="s-licenses__title ty-display2">Minhas Licenças</h2>
-        <h4 class="s-licenses__sub ty-heading4">Gerencie suas licenças pelo menu abaixo</h4>
-      </div>
-      <div class="s-licenses__content">
-        <div class="s-licenses__topbar">
-          <div class="s-licenses__topbar-text-wrapper">
-            <h6 class="s-licenses__topbar-title ty-body1">Lista de licenças</h6>
-            <p class="s-licenses__topbar-caption ty-body2">Você pode criar: 1 licença</p>
-          </div>
-          <button class="s-licenses__topbar-btn" id="btn-open-license">Criar nova licença</button>
-        </div>
-        <table class="s-licenses__table">
-          <thead class="s-licenses__head">
-            <tr class="s-licenses__row th-row">
-              <th class="s-licenses__theading th-heading">Nome</th>
-              <th class="s-licenses__theading th-heading">Licença</th>
-              <th class="s-licenses__theading th-heading">Domínio</th>
-              <th class="s-licenses__theading th-heading">Ações</th>
-            </tr>
-          </thead>
-          <tbody class="s-licenses__body">
-            <tr class="s-licenses__row td-row">
-              <td class="s-licenses__data td-data">site</td>
-              <td class="s-licenses__data td-data">313515131</td>
-              <td class="s-licenses__data td-data">curso-completo-oficial.com</td>
-              <td class="s-licenses__data td-data">
-                <button class="s-licenses__btn-manage btn--warning"><img class="btn--icon" src="./assets/theme/images/icons/tool.svg" alt="Ícone de ferramenta"></button>
-                <button class="s-licenses__btn-delete btn--danger"><img class="btn--icon" src="./assets/theme/images/icons/warning.svg" alt="Ícone de aviso"></button>
-              </td>
-            </tr>
-            <tr class="s-licenses__row td-row">
-              <td class="s-licenses__data td-data">site</td>
-              <td class="s-licenses__data td-data">313515131</td>
-              <td class="s-licenses__data td-data">curso-completo-oficial.com</td>
-              <td class="s-licenses__data td-data">
-                <button class="s-licenses__btn-manage btn--warning"><img class="btn--icon" src="./assets/theme/images/icons/tool.svg" alt="Ícone de ferramenta"></button>
-                <button class="s-licenses__btn-delete btn--danger"><img class="btn--icon" src="./assets/theme/images/icons/warning.svg" alt="Ícone de aviso"></button>
-              </td>
-            </tr>
-            <tr class="s-licenses__row td-row">
-              <td class="s-licenses__data td-data">site</td>
-              <td class="s-licenses__data td-data">313515131</td>
-              <td class="s-licenses__data td-data">curso-completo-oficial.com</td>
-              <td class="s-licenses__data td-data">
-                <button class="s-licenses__btn-manage btn--warning"><img class="btn--icon" src="./assets/theme/images/icons/tool.svg" alt="Ícone de ferramenta"></button>
-                <button class="s-licenses__btn-delete btn--danger"><img class="btn--icon" src="./assets/theme/images/icons/warning.svg" alt="Ícone de aviso"></button>
-              </td>
-            </tr>
-            <tr class="s-licenses__row td-row">
-              <td class="s-licenses__data td-data">site</td>
-              <td class="s-licenses__data td-data">313515131</td>
-              <td class="s-licenses__data td-data">curso-completo-oficial.com</td>
-              <td class="s-licenses__data td-data">
-                <button class="s-licenses__btn-manage btn--warning"><img class="btn--icon" src="./assets/theme/images/icons/tool.svg" alt="Ícone de ferramenta"></button>
-                <button class="s-licenses__btn-delete btn--danger"><img class="btn--icon" src="./assets/theme/images/icons/warning.svg" alt="Ícone de aviso"></button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-    
-    <div class="c-new-license c-new-license--close">
-      <div class="c-new-license__head">
-        <h6 class="c-new-license__title ty-body1">Criar nova Licença</h6>
-        <img class="c-new-license__icon btn-close-license" src="./assets/theme/images/icons/close.svg" alt="Ícone de fechar" >
-      </div>
-      <div class="c-new-license__body">
-        <div class="c-new-license__text">
-          <p class="c-new-license__text-caption ty-body2">Deseja Realmente criar esta licença?<br />Ao clicar em cadastrar você estará gerando uma chave única que poderá ser utilizada em um único Dominio.</p>
-          <p class="c-new-license__text-warning ty-body2">* Evite colocar ponto ou barra no final da URL</p>
-        </div>
-      </div>
-      <form class="c-new-license__form">
-        <input class="c-new-license__input input input--text" type="text" id="license_name" name="license_name" placeholder="Nome da licença">
-        <input class="c-new-license__input input input--text" type="text" id="domain_name" name="domain_name" placeholder="Seu domínio">
-        <button class="c-new-license__button btn--cancel btn-close-license">Cancelar</button>
-        <button class="c-new-license__button btn--submit">Cadastrar</button>
-      </form>
     </div>
-    <script src="./dist/theme.js"></script>
+    <div class="header__modal header__modal--closed">
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link">Download</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link">Licenças</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link">Suporte</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="s-licenses grid">
+    <div class="s-licenses__heading">
+      <h2 class="s-licenses__title ty-display2">Minhas Licenças</h2>
+      <h4 class="s-licenses__sub ty-heading4">Gerencie suas licenças pelo menu abaixo</h4>
+    </div>
+    <div class="s-licenses__content">
+      <div class="s-licenses__topbar">
+        <div class="s-licenses__topbar-text-wrapper">
+          <h6 class="s-licenses__topbar-title ty-body1">Lista de licenças</h6>
+          <p class="s-licenses__topbar-caption ty-body2">Você pode criar: 1 licença</p>
+        </div>
+        <button class="s-licenses__topbar-btn" id="btn-open-license">Criar nova licença</button>
+      </div>
+      <table class="s-licenses__table">
+        <thead class="s-licenses__head">
+          <tr class="s-licenses__row th-row">
+            <th class="s-licenses__theading th-heading">Nome</th>
+            <th class="s-licenses__theading th-heading">Licença</th>
+            <th class="s-licenses__theading th-heading">Domínio</th>
+            <th class="s-licenses__theading th-heading">Ações</th>
+          </tr>
+        </thead>
+        <tbody class="s-licenses__body">
+          <tr class="s-licenses__row td-row">
+            <td class="s-licenses__data td-data">site</td>
+            <td class="s-licenses__data td-data">313515131</td>
+            <td class="s-licenses__data td-data">curso-completo-oficial.com</td>
+            <td class="s-licenses__data td-data">
+              <button class="s-licenses__btn-manage btn--warning"><img class="btn--icon"
+                  src="./assets/theme/images/icons/tool.svg" alt="Ícone de ferramenta"></button>
+              <button class="s-licenses__btn-delete btn--danger"><img class="btn--icon"
+                  src="./assets/theme/images/icons/warning.svg" alt="Ícone de aviso"></button>
+            </td>
+          </tr>
+          <tr class="s-licenses__row td-row">
+            <td class="s-licenses__data td-data">site</td>
+            <td class="s-licenses__data td-data">313515131</td>
+            <td class="s-licenses__data td-data">curso-completo-oficial.com</td>
+            <td class="s-licenses__data td-data">
+              <button class="s-licenses__btn-manage btn--warning"><img class="btn--icon"
+                  src="./assets/theme/images/icons/tool.svg" alt="Ícone de ferramenta"></button>
+              <button class="s-licenses__btn-delete btn--danger"><img class="btn--icon"
+                  src="./assets/theme/images/icons/warning.svg" alt="Ícone de aviso"></button>
+            </td>
+          </tr>
+          <tr class="s-licenses__row td-row">
+            <td class="s-licenses__data td-data">site</td>
+            <td class="s-licenses__data td-data">313515131</td>
+            <td class="s-licenses__data td-data">curso-completo-oficial.com</td>
+            <td class="s-licenses__data td-data">
+              <button class="s-licenses__btn-manage btn--warning"><img class="btn--icon"
+                  src="./assets/theme/images/icons/tool.svg" alt="Ícone de ferramenta"></button>
+              <button class="s-licenses__btn-delete btn--danger"><img class="btn--icon"
+                  src="./assets/theme/images/icons/warning.svg" alt="Ícone de aviso"></button>
+            </td>
+          </tr>
+          <tr class="s-licenses__row td-row">
+            <td class="s-licenses__data td-data">site</td>
+            <td class="s-licenses__data td-data">313515131</td>
+            <td class="s-licenses__data td-data">curso-completo-oficial.com</td>
+            <td class="s-licenses__data td-data">
+              <button class="s-licenses__btn-manage btn--warning"><img class="btn--icon"
+                  src="./assets/theme/images/icons/tool.svg" alt="Ícone de ferramenta"></button>
+              <button class="s-licenses__btn-delete btn--danger"><img class="btn--icon"
+                  src="./assets/theme/images/icons/warning.svg" alt="Ícone de aviso"></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="c-new-license c-new-license--close">
+    <div class="c-new-license__head">
+      <h6 class="c-new-license__title ty-body1">Criar nova Licença</h6>
+      <img class="c-new-license__icon btn-close-license" src="./assets/theme/images/icons/close.svg"
+        alt="Ícone de fechar">
+    </div>
+    <div class="c-new-license__body">
+      <div class="c-new-license__text">
+        <p class="c-new-license__text-caption ty-body2">Deseja Realmente criar esta licença?<br />Ao clicar em cadastrar
+          você estará gerando uma chave única que poderá ser utilizada em um único Dominio.</p>
+        <p class="c-new-license__text-warning ty-body2">* Evite colocar ponto ou barra no final da URL</p>
+      </div>
+    </div>
+    <form class="c-new-license__form">
+      <input class="c-new-license__input input input--text" type="text" id="license_name" name="license_name"
+        placeholder="Nome da licença">
+      <input class="c-new-license__input input input--text" type="text" id="domain_name" name="domain_name"
+        placeholder="Seu domínio">
+      <button class="c-new-license__button btn--cancel btn-close-license">Cancelar</button>
+      <button class="c-new-license__button btn--submit">Cadastrar</button>
+    </form>
+  </div>
+  <script src="./dist/theme.js"></script>
 </body>
 
 </html>

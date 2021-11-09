@@ -9,15 +9,12 @@ function handleCloseModal() {
   return modal.classList.add('c-new-license--close');
 }
 
-function setEvents() {
-  const btnOpen = document.getElementById('btn-open-license');
-  const btnsClose = document.querySelectorAll('.btn-close-license');
+const btnOpen = document.getElementById('btn-open-license');
+const btnsClose = document.querySelectorAll('.btn-close-license');
+if (btnOpen && btnsClose) {
+  console.log('loaded');
   btnOpen.addEventListener('click', handleOpenModal);
   btnsClose.forEach((btn) => {
     btn.addEventListener('click', handleCloseModal);
   });
 }
-
-window.onload = () => {
-  setEvents();
-};
